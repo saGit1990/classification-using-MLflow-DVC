@@ -10,4 +10,24 @@
 6. Update the components
 7. Update the pipeline
 8. Update the main.py
-9. Update the dvc.yaml
+9. Update the dvc.yaml 
+
+
+#### cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI = "https://dagshub.com/saGit1990/classification-using-MLflow-DVC.mlflow"
+
+MLFLOW_TRACKING_USERNAME = personal access token
+
+python script.py
+
+Run this to export as env variable:
+
+```bash
+export MLFLOW_TRACKING_URI = https://dagshub.com/saGit1990/classification-using-MLflow-DVC.mlflow
+export MLFLOW_TRACKING_USERNAME = <token>
+```

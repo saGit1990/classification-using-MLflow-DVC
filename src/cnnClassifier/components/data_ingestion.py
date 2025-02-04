@@ -22,7 +22,7 @@ class DataIngestion:
             logger.info(f"Downloading data from {dataset_url} into file {zip_download_dir}")
             file_id = dataset_url.split("/")[-2]
             prefix = 'https://drive.google.com/uc?/export=download&id='
-            gdown.download(prefix+file_id,zip_download_dir)
+            gdown.download(prefix+file_id,zip_download_dir,verify=False)
             logger.info(f"Downloaded data from {dataset_url} into file {zip_download_dir}")
         except Exception as e:
             raise e
