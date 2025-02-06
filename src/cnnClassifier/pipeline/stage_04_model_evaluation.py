@@ -1,8 +1,11 @@
 from cnnClassifier.config.configuration import ConfigurationManager
 from cnnClassifier.components.model_evaluation_mlflow import Evaluation
+from cnnClassifier.components.copy_model import CopyModel
 from cnnClassifier import logger
 
 STAGE_NAME = "Evaluation stage"
+old_path = '../../artifacts/training/model.h5'
+new_path = ''
 
 class EvaluationPipeline:
     def __init__(self):
